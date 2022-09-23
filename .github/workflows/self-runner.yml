@@ -1,15 +1,18 @@
+
 name: Self Hosted Runner Branch
+
 
 on:
   push:
     branches-ignore:
-      - 'master'
+      - 'staging'
       - 'release*'
 
 jobs:
 
   test:
     name: Unit Test
+
     runs-on: [self-hosted, Linux, x64]
 
     steps:
